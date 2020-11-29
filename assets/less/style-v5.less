@@ -1,0 +1,116 @@
+.wrap-form {
+	max-width: 600px;
+	padding: 15px;
+    margin: 50px auto;
+	.form-contact {
+		max-width: 100%;
+        background: #AA162C;
+	    border-bottom-left-radius: 10px;
+	    border-bottom-right-radius: 10px;
+	    border-radius: 0;
+	    border: 0;
+	    padding: 30px;
+	    .form-legend {
+            color: #fff;
+		    font-size: 25px;
+		    font-weight: bold;
+	    }
+	    .form-block {
+	    	margin: 10px 0;
+	    	.tag-label {
+			    box-sizing: border-box;
+		        float: none;
+			    width: 100%;
+			    color: #fff;
+			    font-weight: bold;
+			    font-size: 20px;
+			    padding: 0;
+	    	}
+	    	.wrap-form-control {
+			    float: none;
+			    width: 100%;
+			    padding: 0;
+			    box-sizing: border-box;
+			    .tag-input {
+			    	width: 100%;
+				    padding: 5px 20px;
+				    box-sizing: border-box;			    
+			        background: #fff;
+				    font-size: 20px;
+				    border-radius: 0px;
+				    border: 0;
+			    }
+			    input[type="radio"] {
+				    display:none;
+				}
+				input[type="radio"] + label {
+				    padding: 0px 30px 10px 30px;
+				    position: relative;
+				    color: #fff;
+				}
+				input[type="radio"] + label:before {
+				    content: "";
+				    width: 25px;
+				    height: 25px;
+				    border: 2px solid #fff;
+				    display: inline-block;
+				    border-radius: 50%;
+				    cursor: pointer;
+				    position: absolute;
+				    left: 0;
+				    z-index: 2;
+				}
+				input[type="radio"] + label:after {
+				    content: "\f00c";
+				    font-family: FontAwesome;
+				    position: absolute;
+				    height: 23px;
+				    width: 23px;
+				    left: 1px;
+				    top: 1px;
+				    border-radius: 50%;
+				    display: none;
+				    background: #991D57;
+				    text-align: center;
+				    line-height: 23px;
+				    color: yellow;
+				    font-weight: normal;
+				}
+				input[type="radio"]:checked + label:after {
+					display: inline-block;
+				}
+				.btn-warning {
+				    font-size: 20px;
+				    background: #CCCCCC;
+				    border: 0;
+				    border-radius: 20px;
+				    padding: 5px 10px;
+				    color: #000;
+				}
+				.tag-input-file {
+					color: #fff;
+				}
+	    	}
+	    	.form-control-relative {
+	    		position: relative;
+	    		#loading {
+	    			position: absolute;
+				    top: 0;
+				    left: 90px;
+				    width: 40px;
+				    height: 40px;
+				    display: none;
+				    img {
+				    	width: 100%;
+				    }
+	    		}
+	    	}
+	    }
+	}
+}
+.clr {
+	clear: both;
+}
+.validate-error-class {
+    color:#FF0000;  /* red */
+}

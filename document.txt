@@ -1,0 +1,21 @@
+1.
+Where is the database?
+
+Please extract source, you can find the database in database/information.sql
+After create your owner database, please import this file to your database.
+How to create and import MySQL database? If you do not have an answer for this question, please read: http://www.inmotionhosting.com/support/website/phpmyadmin/import-database-using-phpmyadmin
+And if you still have no idea, please contact us via trungstormsix skype for live chat.
+
+2.
+What is CF_EMAIL_REPLYTO use for?
+
+CF_EMAIL_REPLYTO use for replying email. This mean when the server send email to a user and they click to reply, the reply email will send to this email.
+CF_EMAIL_REPLYTO_NAME is the name you want user to see when user click on “reply to” to reply server email.
+
+
+3.
+Why use do not receive email?
+
+If the email sent to admin but not user who contact us, please try to change the title of the email. Some email server will not sent email with the title that has spam key word (Ex: thank you, conglatulation…) and the email will not sent or user can not receive that email.
+Please make sure that the email title can not be too long, please see this for more information about email title: http://stackoverflow.com/questions/1592291/what-is-the-email-subject-length-limit
+If the problem does not solve, please feel free to contact me via skype trungstormsix for live support.

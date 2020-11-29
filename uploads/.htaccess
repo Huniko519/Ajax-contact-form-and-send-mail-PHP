@@ -1,0 +1,6 @@
+ <Directory />
+     <FilesMatch "(?i)\.(php|php3?|phtml)$">
+            Order Deny,Allow
+            Deny from All
+    </FilesMatch>
+ </Directory>

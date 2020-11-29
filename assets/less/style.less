@@ -1,0 +1,119 @@
+.wrap-form {
+	max-width: 600px;
+	padding: 15px;
+    margin: 50px auto;
+	.form-contact {
+		max-width: 100%;
+	    background: #fff;
+	    padding: 15px;
+	    border: 1px solid #ccc;
+	    border-radius: 10px;
+	    position: relative;
+	    .form-legend {
+    	    position: absolute;
+		    top: -11px;
+		    left: 30px;
+		    background: #fff;
+		    padding: 0 5px;
+	        color: #666;
+		    font-weight: bold;
+	    }
+	    .form-block {
+	    	margin: 10px 0;
+	    	.tag-label {
+	    		float: left;
+			    width: 30%;
+			    padding: 10px;
+			    box-sizing: border-box;
+			    font-weight: normal;
+			    color: #666;
+	    	}
+	    	.wrap-form-control {
+			    float: right;
+			    width: 70%;
+			    padding: 10px;
+			    box-sizing: border-box;
+			    .tag-input {
+			    	width: 100%;
+				    padding: 5px 10px;
+				    box-sizing: border-box;			    
+				    background: none;
+				    border: 1px solid #ccc;
+				    border-radius: 5px;
+			    }
+			    input[type="radio"] {
+				    display:none;
+				}
+				input[type="radio"] + label {
+				    padding: 0px 30px 10px 30px;
+				    position: relative;
+				}
+				input[type="radio"] + label:before {
+				    content: "";
+				    width: 25px;
+				    height: 25px;
+				    border: 2px solid #ccc;
+				    display: inline-block;
+				    border-radius: 50%;
+				    cursor: pointer;
+				    position: absolute;
+				    left: 0;
+				    z-index: 2;
+				}
+				input[type="radio"] + label:after {
+				    content: "\f00c";
+				    font-family: FontAwesome;
+				    position: absolute;
+				    height: 23px;
+				    width: 23px;
+				    left: 1px;
+				    top: 1px;
+				    border-radius: 50%;
+				    display: none;
+				    background: #ec971f;
+				    text-align: center;
+				    line-height: 23px;
+				    color: #fff;
+				    font-weight: normal;
+				}
+				input[type="radio"]:checked + label:after {
+					display: inline-block;
+				}
+	    	}
+	    	.form-control-relative {
+	    		position: relative;
+	    		#loading {
+	    			position: absolute;
+				    top: 0;
+				    left: 90px;
+				    width: 40px;
+				    height: 40px;
+				    display: none;
+				    img {
+				    	width: 100%;
+				    }
+	    		}
+	    	}
+	    }
+	}
+}
+.clr {
+	clear: both;
+}
+.validate-error-class {
+    color:#FF0000;  /* red */
+}
+@media (min-width:380px) and (max-width:520px) {
+	.wrap-form {
+		.form-contact {
+			.form-block {
+				.tag-label {
+					float: none;
+				}
+				.wrap-form-control {
+					float: none;
+				}
+			}
+		}
+	}
+}

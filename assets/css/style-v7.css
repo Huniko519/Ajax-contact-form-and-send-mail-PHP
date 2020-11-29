@@ -1,0 +1,208 @@
+.wrap-form {
+  max-width: 1100px;
+  padding: 15px;
+  margin: 50px auto;
+}
+.wrap-form .form-contact {
+  max-width: 100%;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  border-radius: 0;
+  border: 0;
+  padding: 30px;
+  float: left;
+  position: relative;
+}
+.wrap-form .form-contact .form-legend {
+   font-size: 28px;
+  font-weight: bold;
+  width: 100%;
+  text-align: center;
+  display: inline-block;
+  margin-bottom: 20px;
+  text-transform: capitalize;
+}
+.wrap-form .form-contact .form-block {
+    margin: 0;
+    width: 50.1%;
+    float: left;
+}
+.wrap-form .form-contact .form-block.ct-message {
+   float: right;
+    position: absolute;
+    width: 50.1%;
+    right: 0;
+}
+.wrap-form .form-contact .form-block.ct-recaptcha {
+  width: 50%;
+  float: right;
+  padding-top: 12px;
+}
+.wrap-form .form-contact .form-block.submit-wrapper {
+    width: 50%;
+    float: left;
+    padding: 46px 0 0;
+}
+.wrap-form .form-contact .form-block .tag-label {
+    display: none;
+  box-sizing: border-box;
+  float: none;
+  width: 100%;
+   font-weight: bold;
+  font-size: 20px;
+  padding: 0;
+  text-align: left;
+    padding-left: 10px;
+
+}
+.wrap-form .form-contact .form-block.ct-gender .tag-label,
+.wrap-form .form-contact .form-block.ct-gender .wrap-form-control,
+.wrap-form .form-contact .form-block.ct-file .tag-label,
+.wrap-form .form-contact .form-block.ct-file .wrap-form-control{
+    display: inline;
+}
+.form-block.ct-file input[type="file"]{
+    display: inline;
+    border: 1px solid #ccc;
+}
+.wrap-form .form-contact .form-block .wrap-form-control {
+float: none;
+width: 100%;
+padding: 0 10px 10px 10px;
+box-sizing: border-box;
+text-align: left;
+}
+.wrap-form .form-contact .form-block .wrap-form-control .tag-input {
+  width: 100%;
+  padding: 5px 20px;
+  box-sizing: border-box;
+   font-size: 20px;
+  border-radius: 0px;
+   border: 2px solid #ccc;
+
+  text-align: left;
+}
+.wrap-form .form-contact .form-block.ct-message .tag-input{
+    height: 227px;
+}
+.wrap-form .form-contact .form-block .wrap-form-control input[type="radio"] {
+  display: none;
+}
+.wrap-form .form-contact .form-block .wrap-form-control input[type="radio"] + label {
+  padding: 0px 30px 10px 30px;
+  position: relative;
+ }
+.wrap-form .form-contact .form-block .wrap-form-control input[type="radio"] + label:before {
+  content: "";
+  width: 25px;
+  height: 25px;
+  border: 2px solid #CCC;
+  display: inline-block;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  z-index: 2;
+  top: -4px;
+}
+.wrap-form .form-contact .form-block .wrap-form-control input[type="radio"] + label:after {
+  content: "\f00c";
+  font-family: FontAwesome;
+  position: absolute;
+  height: 23px;
+  width: 23px;
+  left: 1px;
+  top: 1px;
+  border-radius: 50%;
+  display: none;
+  background: #CCC;
+  text-align: center;
+  line-height: 23px;
+  color: #222;
+  font-weight: normal;
+    top: -3px;
+
+}
+.wrap-form .form-contact .form-block .wrap-form-control input[type="radio"]:checked + label:after {
+  display: inline-block;
+}
+.wrap-form .form-contact .form-block .wrap-form-control .btn-warning {
+  font-size: 20px;
+  border-radius: 2px;
+  padding: 5px 10px;
+  width: 100%;
+  background: #CCC;
+  border: 2px solid #CCC;
+   text-transform: uppercase;
+  font-weight: bold;
+    transition: all 1s;
+    color: #222;
+
+}
+.wrap-form .form-contact .form-block .wrap-form-control .btn-warning:hover {
+  background: yellow;
+ color: #FB540D;
+  transition: all 1s;
+}
+.wrap-form .form-contact .form-block .wrap-form-control .tag-input-file {
+  margin: 0 auto;
+}
+.wrap-form .form-contact .form-block .wrap-form-control .g-recaptcha > div {
+  margin: 0;
+}
+.wrap-form .form-contact .form-block .form-control-relative {
+  position: relative;
+}
+.wrap-form .form-contact .form-block .form-control-relative #loading {
+  position: absolute;
+  top: 0;
+  left: 90px;
+  width: 40px;
+  height: 40px;
+  display: none;
+}
+.wrap-form .form-contact .form-block .form-control-relative #loading img {
+  width: 100%;
+}
+.clr {
+  clear: both;
+}
+.validate-error-class {
+  color: #FF0000;
+  /* red */
+}
+
+@media (max-width: 767px) {
+    .wrap-form {
+        margin: 15px auto;
+    }
+    .wrap-form .form-contact{
+        padding: 5px;
+    }
+    .wrap-form .form-contact .form-block{
+        width: 100% !important;
+        position: relative;
+    }
+    .wrap-form .form-contact .form-block.ct-message{
+        position: relative;
+    }
+    .wrap-form .form-contact .form-block.submit-wrapper{
+        padding-top: 10px;
+    }
+}
+/* responsive recaptcha */
+@media(max-width: 480px){
+  .g-recaptcha iframe {
+    max-width: 100%;
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin: center center;
+    -webkit-transform-origin: center center;
+  }
+  #rc-imageselect {
+    transform:scale(0.77);
+    -webkit-transform:scale(0.77);
+    transform-origin:0 0;
+    -webkit-transform-origin:0 0;
+  }
+}

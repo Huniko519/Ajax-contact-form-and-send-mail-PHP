@@ -1,0 +1,110 @@
+.wrap-form {
+	max-width: 600px;
+	padding: 15px;
+    margin: 50px auto;
+	.form-contact {
+		max-width: 100%;
+        background: #98D4F3;
+	    border-radius: 0;
+	    border: 0;
+	    padding: 30px;
+	    .form-legend {
+	        display: none;
+	    }
+	    .form-block {
+	    	margin: 10px 0;
+	    	.tag-label {
+			    box-sizing: border-box;
+		        float: none;
+			    width: 100%;
+			    color: #fff;
+			    font-weight: bold;
+			    font-size: 20px;
+			    padding: 0 0 0px 20px;
+	    	}
+	    	.wrap-form-control {
+			    float: none;
+			    width: 100%;
+			    padding: 0;
+			    box-sizing: border-box;
+			    .tag-input {
+			    	width: 100%;
+				    padding: 5px 20px;
+				    box-sizing: border-box;			    
+			        background: #fff;
+				    font-size: 20px;
+				    border-radius: 15px;
+				    border: 0;
+				    &:focus {
+				    	outline: 0;
+				    	border: 2px solid #72B2F8;
+				    }
+			    }
+			    input[type="radio"] {
+				    display:none;
+				}
+				input[type="radio"] + label {
+				    padding: 0px 30px 10px 30px;
+				    position: relative;
+				}
+				input[type="radio"] + label:before {
+				    content: "";
+				    width: 25px;
+				    height: 25px;
+				    border: 2px solid #fff;
+				    display: inline-block;
+				    border-radius: 50%;
+				    cursor: pointer;
+				    position: absolute;
+				    left: 0;
+				    z-index: 2;
+				}
+				input[type="radio"] + label:after {
+				    content: "\f00c";
+				    font-family: FontAwesome;
+				    position: absolute;
+				    height: 23px;
+				    width: 23px;
+				    left: 1px;
+				    top: 1px;
+				    border-radius: 50%;
+				    display: none;
+				    background: #FF9900;
+				    text-align: center;
+				    line-height: 23px;
+				    color: #fff;
+				    font-weight: normal;
+				}
+				input[type="radio"]:checked + label:after {
+					display: inline-block;
+				}
+				.btn-warning {
+					background: #FF9900;
+				    width: 100%;
+				    font-size: 20px;
+				    border-radius: 20px;
+				}
+	    	}
+	    	.form-control-relative {
+	    		position: relative;
+	    		#loading {
+	    			position: absolute;
+				    top: 0;
+				    left: 90px;
+				    width: 40px;
+				    height: 40px;
+				    display: none;
+				    img {
+				    	width: 100%;
+				    }
+	    		}
+	    	}
+	    }
+	}
+}
+.clr {
+	clear: both;
+}
+.validate-error-class {
+    color:#FF0000;  /* red */
+}
